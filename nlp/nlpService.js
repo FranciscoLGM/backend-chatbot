@@ -4,9 +4,12 @@ import { manager } from "./nlpConfig.js";
 const getResponse = async (message) => {
   try {
     const response = await manager.process("es", message);
-    return response
+    return response.answer
       ? { answer: response.answer }
-      : { answer: "Lo siento, no entendí tu mensaje" };
+      : {
+          answer:
+            "¡Ups! No entendí tu mensaje. Estoy aquí para ayudarte, así que no dudes en intentar de nuevo o hacerme otra pregunta.",
+        };
   } catch (error) {
     console.error("Error al procesar el mensaje:", error);
   }

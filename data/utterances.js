@@ -105,6 +105,7 @@ const utterances = [
 
   // Preguntar entrega
   { text: "¿Hacen entregas a domicilio?", intent: "preguntar_entrega" },
+  { text: "¿Tienen servicio de delivery?", intent: "preguntar_entrega" },
   { text: "¿Puedo pedir para llevar?", intent: "preguntar_entrega" },
   { text: "¿Tienen servicio de entrega?", intent: "preguntar_entrega" },
   { text: "¿Puedo ordenar para entrega?", intent: "preguntar_entrega" },
@@ -112,7 +113,7 @@ const utterances = [
 
   // Preguntar alergias
   { text: "¿Tienen opciones sin gluten?", intent: "preguntar_alergias" },
-  { text: "¿Hay algo que no tenga mariscos?", intent: "preguntar_alergias" },
+  { text: "¿Tienen alguna opción sin mariscos?", intent: "preguntar_alergias" },
   { text: "¿Tienen platos vegetarianos?", intent: "preguntar_alergias" },
   {
     text: "¿Hay opciones para personas alérgicas?",

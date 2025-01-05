@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
 const menuSchema = new mongoose.Schema({
-  nombre: {
+  name: {
     type: String,
     require: true,
   },
-  descripcion: {
+  description: {
     type: String,
     require: true,
   },
-  precio: {
+  price: {
     type: Number,
     require: true,
   },

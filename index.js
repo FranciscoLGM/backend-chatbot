@@ -1,5 +1,6 @@
 import express from "express";
 import "dotenv/config";
+import cors from "cors";
 import connectDB from "./config/db.js";
 import { trainChatbot } from "./nlp/nlpConfig.js";
 import chatRoute from "./routes/chatRoute.js";
@@ -12,9 +13,10 @@ const PORT = process.env.PORT || 3000;
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 // rutas
-app.use("/chat", chatRoute);
+app.use("/api/chat", chatRoute);
 
 // Conexion a la base de datos
 connectDB();
