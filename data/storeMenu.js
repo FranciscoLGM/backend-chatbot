@@ -6,7 +6,7 @@ const menu = [
     name: "Sushi Roll de Salmón",
     description:
       "Delicioso sushi roll con salmón fresco, aguacate y pepino, envuelto en alga nori.",
-    price: 300, // Precio en pesos argentinos
+    price: 300,
   },
   {
     name: "Sushi Roll de Atún",
