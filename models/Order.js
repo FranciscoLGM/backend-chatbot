@@ -5,33 +5,40 @@ const orderSchema = new mongoose.Schema({
     {
       name: {
         type: String,
-        require: true,
+        required: true,
       },
       quantity: {
         type: Number,
-        require: true,
+        required: true,
+        min: 1,
       },
       price: {
         type: Number,
-        require: true,
+        required: true,
+        min: 0,
       },
     },
   ],
   total: {
     type: Number,
-    require: true,
+    required: true,
+    min: 0,
   },
   customerName: {
     type: String,
-    require: true,
+    required: true,
   },
   customerContact: {
     type: String,
-    require: true,
+    required: true,
+    match: [
+      /^\+?(\d[\d-. ]+)?(\([\d-. ]+\))?[\d-. ]+\d$/,
+      "Formato de número de teléfono inválido",
+    ],
   },
   customerAddress: {
     type: String,
-    require: true,
+    required: true,
   },
   createdAt: {
     type: Date,

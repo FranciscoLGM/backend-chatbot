@@ -1,6 +1,6 @@
 const utterances = [
   // Saludos
-  { text: "Hola, ¿cómo están?", intent: "saludo" },
+  { text: "Hola, ¿cómo andás?", intent: "saludo" },
   { text: "¡Saludos!", intent: "saludo" },
   { text: "¿Qué tal?", intent: "saludo" },
   { text: "Buenos días", intent: "saludo" },
@@ -8,17 +8,17 @@ const utterances = [
   { text: "Buenas noches", intent: "saludo" },
   { text: "Hola, ¿qué hay de nuevo?", intent: "saludo" },
   { text: "¡Hola! ¿Cómo va todo?", intent: "saludo" },
-  { text: "¿Cómo están hoy?", intent: "saludo" },
+  { text: "¿Cómo estás hoy?", intent: "saludo" },
 
   // Mostrar menú
   { text: "¿Cuál es el menú?", intent: "mostrar_menu" },
-  { text: "Muéstrame el menú, por favor.", intent: "mostrar_menu" },
+  { text: "Mostrame el menú, por favor.", intent: "mostrar_menu" },
   { text: "¿Qué platos tienen hoy?", intent: "mostrar_menu" },
   { text: "¿Qué hay para comer?", intent: "mostrar_menu" },
-  { text: "¿Me puedes enseñar el menú?", intent: "mostrar_menu" },
+  { text: "¿Me podés mostrar el menú?", intent: "mostrar_menu" },
   { text: "¿Qué opciones de sushi tienen?", intent: "mostrar_menu" },
   { text: "¿Tienen algún plato especial hoy?", intent: "mostrar_menu" },
-  { text: "¿Qué me recomiendas del menú?", intent: "mostrar_menu" },
+  { text: "¿Qué me recomendás del menú?", intent: "mostrar_menu" },
   { text: "¿Tienen opciones vegetarianas en el menú?", intent: "mostrar_menu" },
 
   // Tomar pedido
@@ -30,7 +30,7 @@ const utterances = [
   { text: "Quiero pedir para llevar.", intent: "tomar_pedido" },
   { text: "¿Puedo hacer un pedido de sushi?", intent: "tomar_pedido" },
   {
-    text: "Estoy buscando algo delicioso, ¿qué me recomiendas?",
+    text: "Estoy buscando algo rico, ¿qué me recomendás?",
     intent: "tomar_pedido",
   },
   { text: "¿Tienen alguna oferta en sushi hoy?", intent: "tomar_pedido" },
@@ -71,7 +71,7 @@ const utterances = [
   { text: "Gracias por la información.", intent: "agradecimiento" },
   { text: "¡Gracias, eso es útil!", intent: "agradecimiento" },
   { text: "Aprecio tu ayuda.", intent: "agradecimiento" },
-  { text: "¡Eres muy amable, gracias!", intent: "agradecimiento" },
+  { text: "¡Sos muy amable, gracias!", intent: "agradecimiento" },
 
   // Despedida
   { text: "Adiós", intent: "despedida" },
@@ -132,7 +132,7 @@ const utterances = [
   },
   { text: "¿Cómo comenzó este restaurante?", intent: "preguntar_historia" },
   {
-    text: "¿Qué me puedes contar sobre la historia del lugar?",
+    text: "¿Qué me podés contar sobre la historia del lugar?",
     intent: "preguntar_historia",
   },
   { text: "¿Quiénes son los fundadores?", intent: "preguntar_historia" },
@@ -156,7 +156,7 @@ const utterances = [
   { text: "¿Aceptan pagos móviles?", intent: "preguntar_pago" },
 
   // Preguntar recomendaciones
-  { text: "¿Qué me recomiendan?", intent: "preguntar_recomendaciones" },
+  { text: "¿Qué me recomendás?", intent: "preguntar_recomendaciones" },
   {
     text: "¿Cuál es el plato más popular?",
     intent: "preguntar_recomendaciones",
