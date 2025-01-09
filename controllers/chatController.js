@@ -1,4 +1,4 @@
-import getResponse from "../nlp/nlpService.js";
+import getResponse from "../services/nlpService.js";
 
 const proccessMessage = async (req, res, next) => {
   try {

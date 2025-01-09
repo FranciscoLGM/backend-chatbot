@@ -1,7 +1,7 @@
 import { Router } from "express";
 import proccessMessage from "../controllers/chatController.js";
 import getMenu from "../controllers/menuController.js";
-import storeOrder from "../controllers/orderController.js";
+import storeOrderController from "../controllers/orderController.js";
 import errorMiddleware from "../middlewares/errorMiddleware.js";
 import validateMessage from "../middlewares/validateMessage.js";
 
@@ -31,7 +31,7 @@ router.post("/chat", validateMessage, async (req, res, next) => {
 });
 
 // Ruta para almacenar el pedido
-router.post("/order", storeOrder);
+router.post("/order", storeOrderController);
 
 // Ruta para obtener el menú
 router.get("/menu", getMenu);
