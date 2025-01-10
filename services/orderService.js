@@ -1,5 +1,6 @@
 import Order from "../models/Order.js";
 
+// Validar los detalles de un pedido
 const validateOrder = (order) => {
   const { items, total, customerName, customerContact, customerAddress } =
     order;
@@ -25,6 +26,7 @@ const validateOrder = (order) => {
   }
 };
 
+// Almacenar un pedido en la base de datos
 const storeOrder = async (orderData) => {
   const { items, total, customerName, customerContact, customerAddress } =
     orderData;

@@ -1,4 +1,3 @@
-// nlp/nlpService.js
 import { manager } from "../nlp/nlpConfig.js";
 
 // Función para obtener la respuesta del chatbot

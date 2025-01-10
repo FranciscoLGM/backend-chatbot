@@ -7,11 +7,8 @@ const storeOrderController = async (req, res, next) => {
 
     // Almacenar el pedido
     await storeOrder(req.body);
-
-    // Responder con éxito
     res.status(201).json({ answer: "Pedido almacenado satisfactoriamente!" });
   } catch (error) {
-    // Manejar errores de validación y otros errores
     console.error("Error al procesar el pedido:", error);
     if (
       error.message === "Faltan detalles del pedido." ||

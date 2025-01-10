@@ -9,7 +9,7 @@ import errorMiddleware from "./middlewares/errorMiddleware.js";
 const app = express();
 
 // Verificar que todas las variables de entorno necesarias estén definidas
-const requiredEnvVars = ["NODE_ENV", "PORT", "MONGO_URI"];
+const requiredEnvVars = ["PORT", "MONGO_URI"];
 requiredEnvVars.forEach((varName) => {
   if (!process.env[varName]) {
     console.error(

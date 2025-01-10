@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dotenv,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,dotenv,windows
-
 ### dotenv ###
 .env
 
@@ -188,4 +185,3 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dotenv,windows
