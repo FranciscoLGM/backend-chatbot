@@ -4,7 +4,7 @@ import fetchMenu from "../../services/menuService.js";
 
 describe("Menu Service", () => {
   beforeAll(async () => {
-    // Conectar a la base de datos en memoria proporcionada por `jest-mongodb`
+    // Conectar a una base de datos de prueba
     await mongoose.connect(process.env.MONGO_URL);
   });
 
@@ -30,5 +30,9 @@ describe("Menu Service", () => {
     expect(fetchedMenu.length).toBe(2);
     expect(fetchedMenu[0].name).toBe("Sushi");
     expect(fetchedMenu[1].name).toBe("Ramen");
+    expect(fetchedMenu[0].description).toBe("Delicioso sushi");
+    expect(fetchedMenu[1].description).toBe("Caldo de ramen");
+    expect(fetchedMenu[0].price).toBe(10);
+    expect(fetchedMenu[1].price).toBe(8);
   });
 });

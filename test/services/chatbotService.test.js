@@ -46,6 +46,16 @@ describe("Chatbot Service", () => {
     expect(possibleAnswers).toContain(response.answer);
   });
 
+  test("Debe responder correctamente a la intención de preguntar horarios", async () => {
+    const response = await manager.process("es", "¿Están abiertos?");
+    expect(response.intent).toBe("preguntar_horarios");
+
+    const possibleAnswers = answers
+      .filter((answer) => answer.intent === "preguntar_horarios")
+      .map((answer) => answer.response);
+    expect(possibleAnswers).toContain(response.answer);
+  });
+
   test("Debe responder correctamente a la intención de preguntar ubicación", async () => {
     const response = await manager.process("es", "¿Dónde están ubicados?");
     expect(response.intent).toBe("preguntar_ubicacion");

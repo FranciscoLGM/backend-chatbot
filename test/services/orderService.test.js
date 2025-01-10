@@ -34,6 +34,8 @@ describe("Order Service", () => {
       expect(order.items[0].name).toBe("Sushi");
       expect(order.total).toBe(20);
       expect(order.customerName).toBe("Pepe Grillo");
+      expect(order.customerContact).toBe("1234567890");
+      expect(order.customerAddress).toBe("Calle Sushi 123");
     });
   });
 

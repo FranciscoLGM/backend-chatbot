@@ -1,6 +1,6 @@
+import mongoose from "mongoose";
 import request from "supertest";
 import express from "express";
-import mongoose from "mongoose";
 import router from "../../routes/chatRoutes.js";
 
 const app = express();
@@ -9,11 +9,11 @@ app.use("/api", router);
 
 describe("Order Routes", () => {
   beforeAll(async () => {
-    // Conectar a la base de datos en memoria proporcionada por `jest-mongodb`
+    // Conectar a una base de datos de prueba
     await mongoose.connect(process.env.MONGO_URL);
   });
   afterAll(async () => {
-    // Cerrar la conexión a la base de datos
+    // Cerrar la conexión a la base de datos de prueba
     await mongoose.connection.close();
   });
   test("Debe almacenar una orden a través de la API", async () => {
