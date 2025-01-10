@@ -17,7 +17,7 @@ Este proyecto es un backend para un chatbot de restaurante de sushi. Permite ges
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/backend-chatbot.git
+   git clone https://github.com/FranciscoLGM/backend-chatbot.git
    cd backend-chatbot
 
    ```
@@ -31,9 +31,9 @@ Este proyecto es un backend para un chatbot de restaurante de sushi. Permite ges
 
 3. Configura las variables de entorno: Crea un archivo .env en la raíz del proyecto y añade las siguientes variables:
 
-   MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
-   NODE_ENV=development
-   PORT=5000
+- MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
+- NODE_ENV=development
+- PORT=5000
 
 ## Cómo Correr el Proyecto
 
